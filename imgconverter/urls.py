@@ -19,6 +19,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "PicFlip"
+admin.site.site_title = "PicFlip"
+admin.site.index_title = "PicFlip Admin Panel"
+
 urlpatterns = [
     path('secret-admin/', admin.site.urls),
     path('', include('app.urls')),

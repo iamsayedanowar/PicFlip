@@ -1,0 +1,201 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/static/fonts/rajdhani-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/static/fonts/rajdhani-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/static/fonts/rajdhani-700.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    color: #D9D9D9;
+    background-color: #0D0D0D;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 1.125rem;
+    max-width: 576px;
+    padding: 1rem;
+}
+
+.error {
+    margin: 1rem;
+    color: #FF6666;
+}
+
+.img-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.upload-container {
+    border: 2px dashed #666666;
+    border-radius: 1rem;
+    background: #1A1A1A;
+    padding: 40px;
+    text-align: center;
+    max-width: 576px;
+    transition: 0.3s ease;
+}
+
+.upload-container:hover {
+    border-color: #666666;
+    background: #262626;
+}
+
+.upload-container.dragover {
+    border-color: #666666;
+    background: #262626;
+}
+
+.upload-label {
+    cursor: pointer;
+    display: block;
+}
+
+.upload-icon {
+    width: 80px;
+    height: auto;
+}
+
+.upload-text {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.upload-subtext {
+    font-size: 0.875rem;
+    color: #999999;
+    line-height: 1.25rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-preview {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    background: #1A1A1A;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+}
+
+.photo {
+    width: 24px;
+    height: auto;
+}
+
+.file-size {
+    color: #999999;
+}
+
+.delete {
+    display: flex;
+    align-items: center;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.delete img {
+    width: 24px;
+    height: auto;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.convert-to {
+    margin-bottom: 1rem;
+}
+
+.file-formats {
+    width: 288px;
+    padding: 0.75rem 1rem;
+    color: #D9D9D9;
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.file-formats:hover {
+    background-color: #262626;
+}
+
+.file-formats option {
+    background-color: #1A1A1A;
+}
+
+.convert-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #0057CC;
+    border: none;
+    border-radius: 0.625rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.convert-button:hover {
+    background-color: #0066FF;
+}
