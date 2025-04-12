@@ -31,7 +31,7 @@
                     Supported Formats - .png, .jpg, .ico, .webp, .tiff, .gif, .avif, .bmp, .raw
                 </div>
             </label>
-            <input type="file" name="file" id="file-input" required>
+            <input type="file" name="file" id="file-input" onchange="checkSize(this)" required>
         </div>
         <div class="file-preview" id="file-preview">
             <img class="photo" src="/static/svg/photo.svg" alt="photo">
@@ -57,6 +57,14 @@
         <button class="convert-button" type="submit">Convert Now</button>
     </form>
     <script src="/static/script.js"></script>
+    <script>
+        function checkSize(input) {
+            if (input.files[0].size > 2 * 1024 * 1024) {
+                alert("Please Upload A File Smaller Than 2MB.");
+                input.value = "";
+            }
+        }
+    </script>
 </body>
 
 </html>
