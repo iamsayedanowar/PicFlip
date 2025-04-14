@@ -2,7 +2,7 @@
 
 # PicFlip
 
-This is a Django project for creating and managing resumes. Users can sign up, fill in their details, and generate a professional resume in PDF format.
+This is a Django project for converting images. Users can upload an image, choose the desired output format and download the converted image instantly.
 
 ## Setup Instructions
 
@@ -37,12 +37,6 @@ This is a Django project for creating and managing resumes. Users can sign up, f
    python manage.py runserver
    ```
 
-## Project Structure
-
-- The `app` directory contains the main Django application for managing resumes.
-- Templates are stored in the `templates` directory for rendering HTML pages.
-- Static files (CSS, JavaScript) are stored in the `static` directory.
-
 ## Tech Stack
 
 **Front-End :** HTML, CSS, JavaScript
@@ -53,7 +47,3 @@ This is a Django project for creating and managing resumes. Users can sign up, f
 
 - For deployment, ensure to set `DEBUG = False` in your `settings.py` and configure a production-ready database (e.g., PostgreSQL).
 - Use a service like Heroku, AWS, DigitalOcean, or Vercel to deploy your Django application.
-
-## Contributing
-
-Contributions are always welcome! Feel free to open an issue, fork the repository, and submit a pull request.
