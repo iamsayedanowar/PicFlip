@@ -1,4 +1,4 @@
-![PicFlip](https://raw.githubusercontent.com/iamsayedanowar/ResumeGEN/refs/heads/main/img/GRP.png)
+![PicFlip](https://raw.githubusercontent.com/iamsayedanowar/PicFlip/refs/heads/main/GRP.png)
 
 # PicFlip
 
