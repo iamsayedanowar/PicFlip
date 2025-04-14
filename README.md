@@ -2,7 +2,7 @@
 
 # PicFlip
 
-This is a Django project for converting images. Users can upload an image, choose the desired output format and download the converted image instantly.
+A Django project for converting images. Users can upload an image, choose the desired output format and download the converted image instantly.
 
 ## Setup Instructions
 
