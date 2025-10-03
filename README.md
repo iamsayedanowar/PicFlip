@@ -46,4 +46,4 @@ A Django project for converting images. Users can upload an image, choose the de
 ## Deployment
 
 - For deployment, ensure to set `DEBUG = False` in your `settings.py` and configure a production-ready database (e.g., PostgreSQL).
-- Use a service like Heroku, AWS, DigitalOcean, or Vercel to deploy your Django application.
+- Use a service like Heroku, AWS, DigitalOcean, Render, or Vercel to deploy your Django application.
